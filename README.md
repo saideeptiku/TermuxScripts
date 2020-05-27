@@ -1,5 +1,7 @@
 # TermuxScripts
 
+Scripts to install Termux on Android through ADB. Along with preparing Termux for python3 with sklearn.
+
 ## A. On Host Side (Linux/MAC)
 
 1. Download repository using ```git``` and ```cd``` into directory
