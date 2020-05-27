@@ -8,7 +8,7 @@
 curl -L https://its-pointless.github.io/setup-pointless-repo.sh | sh
 
 # install scipy
-pkg install scipy
+apt install -y scipy
 
 # install sklearn
 pip3 install scikit-learn
