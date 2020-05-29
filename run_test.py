@@ -36,7 +36,7 @@ for row in x_test:
 passed_time = time() - start_time
 fps = passed_time*1000/x_test.shape[0]
 
-print(f"KNN FPS: {fps:.2f} milliseconds")
+print(f"KNN FPS: {fps:.2f} ms")
 
 ################################################################
 # SVM
@@ -56,6 +56,6 @@ for row in x_test:
 passed_time = time() - start_time
 fps = passed_time*1000/x_test.shape[0]
 
-print(f"KNN FPS: {fps:.2f} milliseconds")
+print(f"SVM FPS: {fps:.2f} ms")
 
 ################################################################
