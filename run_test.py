@@ -5,8 +5,8 @@ quick test sklearn
 import numpy as np
 import sklearn
 from time import time
-from sklearn.neighbors import KNeighborsRegressor as KNN
-from sklearn.svm import SVC as SVM
+from sklearn import neighbors.KNeighborsRegressor as KNN
+from sklearn import svm.SVC as SVM
 import pickle
 
 # create dataset
