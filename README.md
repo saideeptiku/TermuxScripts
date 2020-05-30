@@ -2,11 +2,11 @@
 
 Scripts to install Termux on Android through ADB. Along with preparing Termux for python3 with sklearn.
 
-## A. Install Termux On Host Side (Linux/MAC)
+## A. Install Termux On Android Device
 
 Note: You can also download Termux from the Android Play Store.
 
-1. Download repository using ```git``` and ```cd``` into directory
+1. Download repository using ```git``` and ```cd``` into directory on Linux host
 
 ```bash
 git clone https://github.com/saitiku/TermuxScripts
