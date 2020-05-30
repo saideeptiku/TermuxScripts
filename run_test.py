@@ -5,8 +5,8 @@ quick test sklearn
 import numpy as np
 import sklearn
 from time import time
-from sklearn import neighbors.KNeighborsRegressor as KNN
-from sklearn import svm.SVC as SVM
+from sklearn import neighbors
+from sklearn.svm import SVC as SVM
 import pickle
 
 # create dataset
@@ -21,10 +21,10 @@ x_test = np.random.randint(100, size=(1000, 1, 900))
 ################################################################
 # KNN
 ################################################################
-# print("Training KNN model.")
-# knn = KNN(n_neighbors=3)
-# knn.fit(x_train, y_train)
-# pickle.dump(knn, open("models/knn.pickle", 'wb'))
+print("Training KNN model.")
+knn = neighbors.KNeighborsRegressor(n_neighbors=3)
+knn.fit(x_train, y_train)
+pickle.dump(knn, open("models/knn.pickle", 'wb'))
 
 
 knn = pickle.load(open("models/knn.pickle", 'rb'))
@@ -46,10 +46,10 @@ print(f"KNN FPS: {fps:.2f} ms")
 ################################################################
 # SVM
 ################################################################
-# print("Training SVM model.")
-# svm = SVM(C=1000)
-# svm.fit(x_train, y_train)
-# pickle.dump(svm, open("models/svm.pickle", 'wb'))
+print("Training SVM model.")
+svm = SVM(C=1000)
+svm.fit(x_train, y_train)
+pickle.dump(svm, open("models/svm.pickle", 'wb'))
 
 
 svm = pickle.load(open("models/svm.pickle", 'rb'))
