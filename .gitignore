@@ -1,7 +1,5 @@
-*.apk
-downloads/
+downloads/*
 reports/
-models/tflite
-models/tflite/*
+models/
 *~
 \#*

@@ -59,16 +59,4 @@ python3 run_test.py
 
 ## D. Running Tensorflow Model
 
-Note: Assuming Step B completed with no errors.
-
-1. To download models
-
-```bash
-bash download_tflite.sh
-```
-
-2. To execute models
-   
-```bash
-bash run_tflite.sh
-```
+See ```tflite/README.md```
