@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# unset to run binary
+LD_PRELOAD_BKP="$LD_PRELOAD"
+unset LD_PRELOAD
+
 echo "Running benchmarks"
 
 ./benchmark_model --num_threads=1 --warmup_runs=1 --num_runs=300 --run_delay=0.5 --graph=models/tflite/full_model.tflite 
@@ -22,3 +26,7 @@ read ""
 
 echo "finished running  EEA2 Exit Branch Conv layer; press any key to EXIT"
 read ""
+
+
+# reset LD_PRELOAD
+export LD_PRELOAD="$LD_PRELOAD_BKP"
