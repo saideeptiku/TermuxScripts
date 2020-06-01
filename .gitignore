@@ -1,5 +1,7 @@
 *.apk
 downloads/
 reports/
+models/tflite
+models/tflite/*
 *~
 \#*
