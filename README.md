@@ -57,6 +57,6 @@ Note: Assuming Step B completed with no errors.
 python3 run_test.py
 ```
 
-## D. Running Tensorflow Model
+## D. SSH Setup (Running Tensorflow Model)
 
 See ```tflite/README.md```
