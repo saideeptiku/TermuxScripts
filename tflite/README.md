@@ -5,7 +5,7 @@
 1. Execute ```ssh_setup.sh``` from within Termux to setup ssh on Termux
 
 ```bash
-bash run_ssh.sh
+bash ssh_setup.sh
 ```
 
 2. The script will ask you to set the password for termux. You will use it to login in to the Termux session.
